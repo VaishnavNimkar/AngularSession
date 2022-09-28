@@ -10,10 +10,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SignUpUiComponent } from './components/signUp/signUp.component';
 import { MainCardsComponent } from './components/main-cards/main-cards.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ColorDirective } from './directives/textColor.directive';
 
 
 @NgModule({
-  declarations: [AppRootCompponent, LoginUiComponent, HomeComponent, SignUpUiComponent, MainCardsComponent],
+  declarations: [AppRootCompponent, LoginUiComponent, HomeComponent, SignUpUiComponent, MainCardsComponent, ColorDirective],
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule, ReactiveFormsModule, MaterialModule, AppRoutingModule, HttpClientModule],
   exports : [],
   providers: [],

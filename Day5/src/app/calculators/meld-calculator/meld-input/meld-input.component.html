@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <td>Bilirubin</td>
+        <td>
+            <input type="text" #bilirubinEditBox (input)="onBilirubinEdit(bilirubinEditBox.value)" [value] = "bilirubin">
+        </td>
+    </tr>
+    <tr>
+        <td>Creatinine</td>
+        <td>
+            <input type="text" #creatinineEditBox (input)="onCreatinineEdit(creatinineEditBox.value)" [value] = "creatinine">
+        </td>
+    </tr>
+    <tr>
+        <td>INR</td>
+        <td>
+            <input type="text" #inrEditBox (input)="onInrEdit(inrEditBox.value)" [value] = "inr">
+        </td>
+    </tr>
+    <tr>
+        <td><button (click)="calculateMELD()">Calculate BMI</button></td>
+        <td><button (click)="clearData()">Clear</button></td>
+    </tr>
+</table>
